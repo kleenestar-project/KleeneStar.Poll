@@ -1,0 +1,162 @@
+﻿# en-US language resource file
+plugin.name=KleeneStar.Poll
+plugin.description=Polls for the KleeneStar platform: scheduling polls and decisions with deadlines, anonymous or hidden results and automatic closing.
+
+# kind and lists
+kind.label=Polls
+running.label=Running polls
+running.none=No running poll
+running.open=no deadline
+running.until=until {0}
+running.voted=voted
+list.running=Running
+list.running.none=No poll is running right now.
+list.closed=Closed
+list.closed.none=No poll has been closed yet.
+list.voter={0} voter
+list.voters={0} voters
+list.result=Result: {0}
+
+# types
+type.schedule.label=Scheduling poll
+type.schedule.description=Propose dates; everybody answers each with yes, if need be or no.
+type.decision.label=Decision
+type.decision.description=A question with options; everybody chooses one or several.
+
+# poll dialog
+poll.add.label=New poll
+poll.add.title=New poll
+poll.add.submit=Start poll
+poll.add.done={0} "{1}" has started.
+poll.edit.label=Edit
+poll.edit.title=Edit poll
+poll.edit.submit=Save
+poll.edit.done={0} "{1}" was saved.
+poll.tab.general=Poll
+poll.tab.settings=Settings
+poll.type.label=Kind of poll
+poll.type.help=A scheduling poll finds a date, a decision chooses among options.
+poll.type.help.change=Changing the kind discards every vote given so far.
+poll.type.required=Choose the kind of poll.
+poll.class.label=Type
+poll.class.help=The class the poll is created in.
+poll.class.required=This workspace has no poll class you may create in.
+poll.summary.label=Question
+poll.summary.placeholder=When do we meet? / Which logo do we take?
+poll.summary.required=Ask a question.
+poll.options.label=Options
+poll.options.help=One option per line. Scheduling poll: "11/25/2026 14:00 - 15:30", "11/25/2026 14:00" (default duration), "11/25/2026" or "11/25/2026 - 11/27/2026" (whole days), optionally with a remark after "|". Options left unchanged keep their votes.
+poll.options.placeholder=11/25/2026 14:00 - 15:00 | room 4.12
+poll.options.invalid.date=These lines are no date: {0}
+poll.options.invalid.text=These lines are too long: {0}
+poll.options.many=A poll has at most {0} options.
+poll.options.one=Propose at least one date.
+poll.options.two=A decision needs at least two options.
+poll.description.label=Description
+poll.deadline.label=Deadline
+poll.deadline.help=The poll closes automatically afterwards. Empty: it runs until it is closed.
+poll.deadlinetime.label=Time
+poll.deadline.invalid=The deadline is no valid date.
+poll.deadline.past=The deadline lies in the past.
+poll.deadline.day=A time needs a day.
+poll.allowmaybe.label=Allow "if need be"
+poll.allowmaybe.help=Scheduling polls only: besides yes and no, "if need be" may be answered.
+poll.multiple.label=Multiple choice
+poll.multiple.help=Decisions only: several options may be chosen.
+poll.anonymous.label=Anonymous
+poll.anonymous.help=The result shows numbers only, not who voted what.
+poll.hideresults.label=Hide result
+poll.hideresults.help=Voters see the result only once the poll is closed.
+
+# answers and vote dialog
+answer.yes=Yes
+answer.yes.description=Suits me.
+answer.maybe=If need be
+answer.maybe.description=Suits me if need be.
+answer.no=No
+answer.no.description=Does not suit me.
+vote.label=Vote
+vote.change=Change vote
+vote.title=Vote
+vote.submit=Cast vote
+vote.help.graded=Say for each date whether it suits you. Dates left unanswered do not count.
+vote.help.single=Choose one option.
+vote.help.multiple=Choose every option you support. Choosing none withdraws your vote.
+vote.one=Choose exactly one option.
+vote.closed=The poll is closed.
+vote.invalid=The vote does not fit the poll; reload the page.
+vote.done=Your vote on "{0}" is counted.
+vote.withdrawn=Your vote on "{0}" is withdrawn.
+
+# result card
+result.header.running=Voting
+result.header.closed=Result
+result.state.open=Runs until it is closed.
+result.state.until=Runs until {0}.
+result.state.closed=Closed on {0}.
+result.state.closedby=Closed on {0} by {1}.
+result.chosen.date=Date fixed: {0}
+result.chosen.option=Decided: {0}
+result.empty=This poll has no options yet.
+result.empty.writable=This poll has no options yet. Add them with "Edit".
+result.hidden=The result is shown once the poll is closed.
+result.yes={0} yes
+result.maybe={0} if need be
+result.no={0} no
+result.vote={0} vote
+result.votes={0} votes
+result.you=you
+result.unknown=Unknown
+result.mine.none=You have not voted yet.
+result.mine.chosen=Your choice: {0}
+result.mine.graded=Your vote: {0}× yes, {1}× if need be on {2} dates.
+
+# settings card
+settings.header=Settings
+settings.type=Kind
+settings.deadline=Deadline
+settings.deadline.none=none
+settings.maybe="If need be"
+settings.multiple=Multiple choice
+settings.anonymous=Anonymous
+settings.hidden=Result hidden
+settings.zone=Times in
+settings.on=yes
+settings.off=no
+
+# close and reopen
+close.label=Close
+close.title=Close poll
+close.submit=Close
+close.description={0} voters have voted. Afterwards no more votes are taken.
+close.chosen.date=Date fixed
+close.chosen.option=Decision
+close.chosen.help=The leading option is proposed.
+close.chosen.none=Fix no option
+close.chosen.invalid=The option does not belong to this poll.
+close.done={0} "{1}" is closed.
+reopen.label=Reopen
+reopen.title=Reopen poll
+reopen.submit=Reopen
+reopen.prolog=Reopen the poll "{0}"?
+reopen.description=The votes given are kept; a deadline that has passed is dropped.
+reopen.done={0} "{1}" is open again.
+
+# workspace template
+template.teampolls.name=Team polls
+template.teampolls.description=Scheduling polls and decisions of a team: find dates, weigh options, record results.
+template.teampolls.class.poll=A scheduling poll or decision of the team.
+template.field.description=What the poll is about.
+template.field.status=Where the poll stands.
+template.field.labels=Labels for filtering and grouping.
+template.workflow.name=Poll
+template.workflow.description=From open to decided or cancelled; decided automatically when closed.
+template.status.open=Open
+template.status.open.description=Voting is under way.
+template.status.decided=Decided
+template.status.decided.description=The poll is closed and has a result.
+template.status.cancelled=Cancelled
+template.status.cancelled.description=The poll was closed without a result.
+template.transition.decide=Decide
+template.transition.cancel=Cancel
+template.transition.reopen=Reopen

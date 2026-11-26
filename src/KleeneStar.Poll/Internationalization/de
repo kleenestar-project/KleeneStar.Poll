@@ -1,0 +1,162 @@
+﻿# de-DE language resource file
+plugin.name=KleeneStar.Poll
+plugin.description=Umfragen für die KleeneStar-Plattform: Zeitabstimmungen und Entscheidungen mit Fristen, anonymen oder verdeckten Ergebnissen und automatischem Abschluss.
+
+# kind and lists
+kind.label=Umfragen
+running.label=Laufende Umfragen
+running.none=Keine laufende Umfrage
+running.open=ohne Frist
+running.until=bis {0}
+running.voted=abgestimmt
+list.running=Laufend
+list.running.none=Gerade läuft keine Umfrage.
+list.closed=Beendet
+list.closed.none=Noch keine Umfrage ist beendet.
+list.voter={0} Teilnehmer
+list.voters={0} Teilnehmer
+list.result=Ergebnis: {0}
+
+# types
+type.schedule.label=Zeitabstimmung
+type.schedule.description=Termine vorschlagen; jeder sagt zu jedem Ja, Wenn nötig oder Nein.
+type.decision.label=Entscheidung
+type.decision.description=Eine Frage mit Optionen; jeder wählt eine oder mehrere.
+
+# poll dialog
+poll.add.label=Neue Umfrage
+poll.add.title=Neue Umfrage
+poll.add.submit=Umfrage starten
+poll.add.done={0} „{1}“ ist gestartet.
+poll.edit.label=Bearbeiten
+poll.edit.title=Umfrage bearbeiten
+poll.edit.submit=Speichern
+poll.edit.done={0} „{1}“ wurde gespeichert.
+poll.tab.general=Umfrage
+poll.tab.settings=Einstellungen
+poll.type.label=Art
+poll.type.help=Eine Zeitabstimmung sucht einen Termin, eine Entscheidung wählt unter Optionen.
+poll.type.help.change=Wird die Art geändert, verfallen alle bisherigen Stimmen.
+poll.type.required=Wählen Sie die Art der Umfrage.
+poll.class.label=Typ
+poll.class.help=Die Klasse, in der die Umfrage angelegt wird.
+poll.class.required=In diesem Workspace gibt es keine Umfrageklasse, in der Sie anlegen dürfen.
+poll.summary.label=Frage
+poll.summary.placeholder=Wann treffen wir uns? / Welches Logo nehmen wir?
+poll.summary.required=Stellen Sie eine Frage.
+poll.options.label=Optionen
+poll.options.help=Eine Option je Zeile. Zeitabstimmung: „25.11.2026 14:00 - 15:30“, „25.11.2026 14:00“ (Standarddauer), „25.11.2026“ oder „25.11.2026 - 27.11.2026“ (ganztägig), optional mit Bemerkung nach „|“. Unveränderte Optionen behalten ihre Stimmen.
+poll.options.placeholder=25.11.2026 14:00 - 15:00 | Raum 4.12
+poll.options.invalid.date=Diese Zeilen sind kein Termin: {0}
+poll.options.invalid.text=Diese Zeilen sind zu lang: {0}
+poll.options.many=Eine Umfrage hat höchstens {0} Optionen.
+poll.options.one=Schlagen Sie mindestens einen Termin vor.
+poll.options.two=Eine Entscheidung braucht mindestens zwei Optionen.
+poll.description.label=Beschreibung
+poll.deadline.label=Frist
+poll.deadline.help=Danach wird die Umfrage automatisch beendet. Leer: läuft, bis sie beendet wird.
+poll.deadlinetime.label=Uhrzeit
+poll.deadline.invalid=Die Frist ist kein gültiges Datum.
+poll.deadline.past=Die Frist liegt in der Vergangenheit.
+poll.deadline.day=Zur Uhrzeit gehört ein Tag.
+poll.allowmaybe.label=„Wenn nötig“ erlauben
+poll.allowmaybe.help=Nur Zeitabstimmungen: Neben Ja und Nein darf „Wenn nötig“ geantwortet werden.
+poll.multiple.label=Mehrfachauswahl
+poll.multiple.help=Nur Entscheidungen: Es dürfen mehrere Optionen gewählt werden.
+poll.anonymous.label=Anonym
+poll.anonymous.help=Das Ergebnis zeigt nur Zahlen, nicht wer wie gestimmt hat.
+poll.hideresults.label=Ergebnis verdecken
+poll.hideresults.help=Teilnehmer sehen das Ergebnis erst, wenn die Umfrage beendet ist.
+
+# answers and vote dialog
+answer.yes=Ja
+answer.yes.description=Passt.
+answer.maybe=Wenn nötig
+answer.maybe.description=Passt zur Not.
+answer.no=Nein
+answer.no.description=Passt nicht.
+vote.label=Abstimmen
+vote.change=Stimme ändern
+vote.title=Abstimmen
+vote.submit=Stimme abgeben
+vote.help.graded=Sagen Sie zu jedem Termin, ob er Ihnen passt. Unbeantwortete Termine zählen nicht.
+vote.help.single=Wählen Sie eine Option.
+vote.help.multiple=Wählen Sie alle Optionen, die Sie unterstützen. Keine Auswahl zieht Ihre Stimme zurück.
+vote.one=Wählen Sie genau eine Option.
+vote.closed=Die Umfrage ist beendet.
+vote.invalid=Die Stimme passt nicht zur Umfrage; laden Sie die Seite neu.
+vote.done=Ihre Stimme zu „{0}“ ist gezählt.
+vote.withdrawn=Ihre Stimme zu „{0}“ ist zurückgezogen.
+
+# result card
+result.header.running=Abstimmung
+result.header.closed=Ergebnis
+result.state.open=Läuft, bis sie beendet wird.
+result.state.until=Läuft bis {0}.
+result.state.closed=Beendet am {0}.
+result.state.closedby=Beendet am {0} von {1}.
+result.chosen.date=Festgelegter Termin: {0}
+result.chosen.option=Entschieden: {0}
+result.empty=Diese Umfrage hat noch keine Optionen.
+result.empty.writable=Diese Umfrage hat noch keine Optionen. Ergänzen Sie sie über „Bearbeiten“.
+result.hidden=Das Ergebnis wird gezeigt, sobald die Umfrage beendet ist.
+result.yes={0} ja
+result.maybe={0} wenn nötig
+result.no={0} nein
+result.vote={0} Stimme
+result.votes={0} Stimmen
+result.you=Sie
+result.unknown=Unbekannt
+result.mine.none=Sie haben noch nicht abgestimmt.
+result.mine.chosen=Ihre Wahl: {0}
+result.mine.graded=Ihre Stimme: {0}× ja, {1}× wenn nötig bei {2} Terminen.
+
+# settings card
+settings.header=Einstellungen
+settings.type=Art
+settings.deadline=Frist
+settings.deadline.none=keine
+settings.maybe=„Wenn nötig“
+settings.multiple=Mehrfachauswahl
+settings.anonymous=Anonym
+settings.hidden=Ergebnis verdeckt
+settings.zone=Zeiten in
+settings.on=ja
+settings.off=nein
+
+# close and reopen
+close.label=Beenden
+close.title=Umfrage beenden
+close.submit=Beenden
+close.description={0} Teilnehmer haben abgestimmt. Danach sind keine Stimmen mehr möglich.
+close.chosen.date=Festgelegter Termin
+close.chosen.option=Entscheidung
+close.chosen.help=Die führende Option ist vorgeschlagen.
+close.chosen.none=Keine Option festlegen
+close.chosen.invalid=Die Option gehört nicht zu dieser Umfrage.
+close.done={0} „{1}“ ist beendet.
+reopen.label=Wieder öffnen
+reopen.title=Umfrage wieder öffnen
+reopen.submit=Wieder öffnen
+reopen.prolog=Die Umfrage „{0}“ wieder öffnen?
+reopen.description=Die abgegebenen Stimmen bleiben erhalten; eine abgelaufene Frist entfällt.
+reopen.done={0} „{1}“ ist wieder offen.
+
+# workspace template
+template.teampolls.name=Abstimmungen
+template.teampolls.description=Zeitabstimmungen und Entscheidungen eines Teams: Termine finden, Optionen abwägen, Ergebnisse festhalten.
+template.teampolls.class.poll=Eine Zeitabstimmung oder Entscheidung des Teams.
+template.field.description=Worum es bei der Umfrage geht.
+template.field.status=Wo die Umfrage steht.
+template.field.labels=Schlagwörter zum Filtern und Gruppieren.
+template.workflow.name=Umfrage
+template.workflow.description=Von offen bis entschieden oder abgebrochen; beim Beenden automatisch entschieden.
+template.status.open=Offen
+template.status.open.description=Es wird abgestimmt.
+template.status.decided=Entschieden
+template.status.decided.description=Die Umfrage ist beendet und hat ein Ergebnis.
+template.status.cancelled=Abgebrochen
+template.status.cancelled.description=Die Umfrage wurde ohne Ergebnis beendet.
+template.transition.decide=Entscheiden
+template.transition.cancel=Abbrechen
+template.transition.reopen=Wieder öffnen
